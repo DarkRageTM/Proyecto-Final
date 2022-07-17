@@ -2,6 +2,8 @@ const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const axios = require ("axios");
 
+axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:3001";
+
 // Syncing all the models at once.
 
 conn.sync({ force: false }).then(async() => {
@@ -24,6 +26,6 @@ conn.sync({ force: false }).then(async() => {
 try {
 await axios.post(`/auth/register`, admin);
 } catch (error) {
-console.log("Admin Already Exist");
+console.log(error);
 }
 });
