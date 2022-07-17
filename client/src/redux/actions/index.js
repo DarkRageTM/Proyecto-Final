@@ -25,12 +25,12 @@ export const CLEAR_USER = "CLEAR_USER";
 //   };
 // };
 
-const urlUser = "http://localhost:3001/user";
-const urlSponsors = "http://localhost:3001/sponsor";
-const urlSubtByT = "http://localhost:3001/subtournament/prueba";
-const urlInscription = "http://localhost:3001/inscription"
-const urlTournament = "http://localhost:3001/tournament";
-const urlSponsor = "http://localhost:3001/sponsor"
+const urlUser = "/user";
+const urlSponsors = "/sponsor";
+const urlSubtByT = "/subtournament/prueba";
+const urlInscription = "/inscription"
+const urlTournament = "/tournament";
+const urlSponsor = "/sponsor"
 toast.configure();
 
 

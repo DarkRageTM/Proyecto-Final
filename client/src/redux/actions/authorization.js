@@ -4,7 +4,7 @@ import { getToken, setToken, deleteToken } from "../helpers/token";
 
 export const AUTHENTICATED = "AUTHENTICATED";
 export const NOT_AUTHENTICATED = "NOT_AUTHENTICATED";
-const urlAuth = "http://localhost:3001/auth";
+const urlAuth = "/auth";
 
 export const postNewUser = (valuesInput) => {
   return async () => {
