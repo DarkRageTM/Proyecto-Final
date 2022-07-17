@@ -1,0 +1,32 @@
+.StarsContainer{
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+
+.stars{
+  text-align: center;
+}
+.StarInput[type="radio"] {
+  display: none;
+}
+
+.StarLabel {
+  color: grey;
+  font-size: 40px;
+}
+
+.stars{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.StarLabel:hover,
+.StarLabel:hover ~ .StarLabel {
+  color: orange;
+}
+
+.StarInput[type="radio"]:checked ~ .StarLabel {
+  color: orange;
+}
