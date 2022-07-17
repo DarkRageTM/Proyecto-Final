@@ -2,7 +2,6 @@ const {Router} = require('express');
 const router = Router();
 const {get_Userdb} = require('../utils/User_Controllers');
 const { User, Category, Inscription, Score, Op } = require('../db');
-const  ArrayUsers  = require('../ArrayUserEjemplo.js')
 
 // console.log(ArrayUsers);
 
