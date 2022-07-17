@@ -38,7 +38,7 @@ export const FormTournament = () => {
 
   async function handleOnSubmit(e) {
     e.preventDefault();
-    await axios.post(`http://localhost:3001/tournament`, input);
+    await axios.post(`/tournament`, input);
     alert("Successfully created tournament");
   }
 

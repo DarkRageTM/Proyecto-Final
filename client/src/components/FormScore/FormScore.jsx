@@ -17,7 +17,7 @@ export const FormScore = (props) => {
   const handleSubmit = async function (e) {
     e.preventDefault();
     console.log("intentando hacer post");
-    await axios.post(`http://localhost:3001/score/${userId}`, 
+    await axios.post(`/score/${userId}`, 
       score,
     );
     alert("successfully created user");
