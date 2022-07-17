@@ -24,7 +24,7 @@ conn.sync({ force: true }).then(async() => {
     gender: "NoGender",
 }
 try {
-await axios.post(`/auth/register`, admin);
+await axios.post(`https://proyectofinal25b.herokuapp.com/auth/register`, admin);
 } catch (error) {
 console.log('User/Email Already Exist');
 }
